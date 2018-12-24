@@ -2,7 +2,6 @@
   "name": "hancorg_hexlet",
   "version": "1.0.0",
   "description": "My first project on Hexlet",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/hancorg-spb/project-lvl1-s400"
