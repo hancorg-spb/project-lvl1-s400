@@ -19,6 +19,7 @@
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
+  "homepage": "https://github.com/hancorg-spb/project-lvl1-s400/blob/master/README.md",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
