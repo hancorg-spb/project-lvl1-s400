@@ -17,9 +17,6 @@
   },
   "author": "hancorg",
   "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.11"
-  },
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -28,7 +25,6 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "@babel/preset-flow": "^7.0.0",
-    "jest": "^23.6.0"
+    "@babel/preset-flow": "^7.0.0"
   }
 }
