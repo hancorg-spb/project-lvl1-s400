@@ -1,13 +1,13 @@
 {
   "name": "hancorg_hexlet",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "My first project on Hexlet",
   "repository": {
     "type": "git",
     "url": "https://github.com/hancorg-spb/project-lvl1-s400"
   },
-  "files": [ 
-    "dist" 
+  "files": [
+    "dist"
   ],
   "scripts": {
     "test": "jest",
@@ -23,7 +23,7 @@
   "keywords": [
     "brain-games",
     "hexlet"
-],
+  ],
   "dependencies": {
     "readline-sync": "^1.4.8"
   },
@@ -32,6 +32,10 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "@babel/preset-flow": "^7.0.0"
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
