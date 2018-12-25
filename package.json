@@ -1,6 +1,6 @@
 {
   "name": "hancorg_hexlet",
-  "version": "1.2.0",
+  "version": "1.3.8",
   "description": "My first project on Hexlet",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   "author": "hancorg",
   "license": "ISC",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "homepage": "https://github.com/hancorg-spb/project-lvl1-s400/blob/master/README.md",
   "keywords": [
