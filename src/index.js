@@ -23,12 +23,11 @@ const isEvenNumber = () => {
 
     if (isEvenQuestion !== trueAnswer) {
       console.log(`'${isEvenQuestion}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\n`);
-      return console.log(`Let's try again ${userName}!`);
+      console.log(`Let's try again ${userName}!`);
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
-  return null;
 };
 
 export { isEvenNumber, sayHello };
