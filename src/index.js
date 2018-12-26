@@ -22,8 +22,9 @@ const isEvenNumber = () => {
     const trueAnswer = isEven(question) ? 'yes' : 'no';
 
     if (isEvenQuestion !== trueAnswer) {
-      console.log(`'${isEvenQuestion}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\n`);
+      console.log(`'${isEvenQuestion}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again ${userName}!`);
+      return;
     }
     console.log('Correct!');
   }
