@@ -21,10 +21,10 @@ const gameSample = (rule, game) => {
   for (let i = 0; i < numberOfQuestions; i += 1) {
     const [question, trueAnswer] = game();
     console.log(`Question: ${question}`);
-    const isEvenQuestion = readlineSync.question('Your answer: ');
+    const answer = readlineSync.question('Your answer: ');
 
-    if (isEvenQuestion !== trueAnswer) {
-      console.log(`'${isEvenQuestion}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
+    if (answer !== trueAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again ${userName}!`);
       return;
     }
