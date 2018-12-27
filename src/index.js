@@ -1,14 +1,6 @@
 import readlineSync from 'readline-sync';
 
-// additional functions
 const numberOfQuestions = 3;
-
-// dialog
-const sayHello = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  return console.log(`Hello ${userName}!`);
-};
 
 // main game function
 const gameSample = (rule, game) => {
@@ -31,6 +23,4 @@ const gameSample = (rule, game) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export {
-  sayHello, gameSample,
-};
+export default gameSample;

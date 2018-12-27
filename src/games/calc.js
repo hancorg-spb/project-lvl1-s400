@@ -1,4 +1,4 @@
-import { gameSample } from '..';
+import gameSample from '..';
 import randomNumber from '../utils';
 
 const randomOperation = () => {
