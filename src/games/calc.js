@@ -1,4 +1,5 @@
-import { randomNumber, gameSample } from '..';
+import { gameSample } from '..';
+import randomNumber from '../utils';
 
 const randomOperation = () => {
   const operationIndex = randomNumber(1, 4);

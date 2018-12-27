@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 
 // additional functions
 const numberOfQuestions = 3;
-const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 // dialog
 const sayHello = () => {
@@ -33,5 +32,5 @@ const gameSample = (rule, game) => {
 };
 
 export {
-  sayHello, randomNumber, gameSample,
+  sayHello, gameSample,
 };

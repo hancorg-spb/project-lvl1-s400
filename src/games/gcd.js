@@ -1,4 +1,5 @@
-import { randomNumber, gameSample } from '..';
+import { gameSample } from '..';
+import randomNumber from '../utils';
 
 const searchAnswer = (divisorOne, divisorTwo) => {
   for (let i = Math.min(divisorOne, divisorTwo); i > 1; i -= 1) {
