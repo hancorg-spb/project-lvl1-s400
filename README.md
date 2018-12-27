@@ -8,6 +8,6 @@
 
 # examples of installation and running games
 
-[![asciicast](https://asciinema.org/a/aMTx1BonZzMBKXBNN3yjXvGez.svg)](https://asciinema.org/a/aMTx1BonZzMBKXBNN3yjXvGez)
-[![asciicast](https://asciinema.org/a/DRYbPHjDUdqYhszJ8db2adeyq.svg)](https://asciinema.org/a/DRYbPHjDUdqYhszJ8db2adeyq)
-[![asciicast](https://asciinema.org/a/2xTBqPcUHSpABxkYyGYt3Iwu1.svg)](https://asciinema.org/a/2xTBqPcUHSpABxkYyGYt3Iwu1)
+[![asciicast](https://asciinema.org/a/dly1eKpooL6cX1deJct7PD3Rf.svg)](https://asciinema.org/a/dly1eKpooL6cX1deJct7PD3Rf)
+[![asciicast](https://asciinema.org/a/EVjWm8oMyXVDUO1AMs6lWUjbr.svg)](https://asciinema.org/a/EVjWm8oMyXVDUO1AMs6lWUjbr)
+[![asciicast](https://asciinema.org/a/xRXF59dgchItrbnJ4blqtoy9E.svg)](https://asciinema.org/a/xRXF59dgchItrbnJ4blqtoy9E)
