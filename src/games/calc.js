@@ -3,11 +3,18 @@ import randomNumber from '../utils';
 
 const randomOperation = () => {
   const operationIndex = randomNumber(1, 4);
-  let stringOperation = '+';
-  if (operationIndex === 1) {
-    stringOperation = '-';
-  } else if (operationIndex === 2) {
-    stringOperation = '*';
+  const [plus, minus, multiply] = ['+', '-', '*'];
+  let stringOperation;
+  switch (operationIndex) {
+    case 1:
+      stringOperation = plus;
+      break;
+    case 2:
+      stringOperation = minus;
+      break;
+    default:
+      stringOperation = multiply;
+      break;
   }
   return stringOperation;
 };
@@ -18,19 +25,24 @@ const calc = () => {
   const numberOne = randomNumber(1, 99);
   const numberTwo = randomNumber(1, 99);
   const operation = randomOperation();
-  let question = '';
-  let trueAnswer = 0;
+  let question;
+  let trueAnswer;
 
-  if (operation === '+') {
-    question = `${numberOne} + ${numberTwo}`;
-    trueAnswer = String(numberOne + numberTwo);
-  } else if (operation === '-') {
-    question = `${numberOne} - ${numberTwo}`;
-    trueAnswer = String(numberOne - numberTwo);
-  } else {
-    question = `${numberOne} * ${numberTwo}`;
-    trueAnswer = String(numberOne * numberTwo);
+  switch (operation) {
+    case '+':
+      question = `${numberOne} + ${numberTwo}`;
+      trueAnswer = String(numberOne + numberTwo);
+      break;
+    case '-':
+      question = `${numberOne} - ${numberTwo}`;
+      trueAnswer = String(numberOne - numberTwo);
+      break;
+    default:
+      question = `${numberOne} * ${numberTwo}`;
+      trueAnswer = String(numberOne * numberTwo);
+      break;
   }
+
   return [question, trueAnswer];
 };
 
