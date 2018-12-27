@@ -9,7 +9,7 @@ const searchAnswer = (divisorOne, divisorTwo) => {
   return 1;
 };
 
-const rule = 'Find the greatest common divisor of given numbers\n';
+const rule = 'Find the greatest common divisor of given numbers.';
 
 const gcd = () => {
   const numberOne = randomNumber(1, 99);

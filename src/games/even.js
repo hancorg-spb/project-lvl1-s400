@@ -1,6 +1,8 @@
-import { randomNumber, isEven, gameSample } from '..';
+import { randomNumber, gameSample } from '..';
 
-const rule = 'Answer "yes" if number even otherwise answer "no".\n';
+const isEven = number => number % 2 === 0;
+
+const rule = 'Answer "yes" if number even otherwise answer "no".';
 
 const even = () => {
   const question = randomNumber(1, 99);

@@ -11,7 +11,7 @@ const randomOperation = () => {
   return stringOperation;
 };
 
-const rule = 'What is the result of the expression?\n';
+const rule = 'What is the result of the expression?';
 
 const calc = () => {
   const numberOne = randomNumber(1, 99);
@@ -24,8 +24,8 @@ const calc = () => {
     question = `${numberOne} + ${numberTwo}`;
     trueAnswer = String(numberOne + numberTwo);
   } else if (operation === '-') {
-    question = `${Math.max(numberOne, numberTwo)} - ${Math.min(numberOne, numberTwo)}`;
-    trueAnswer = String(Math.max(numberOne, numberTwo) - Math.min(numberOne, numberTwo));
+    question = `${numberOne} - ${numberTwo}`;
+    trueAnswer = String(numberOne - numberTwo);
   } else {
     question = `${numberOne} * ${numberTwo}`;
     trueAnswer = String(numberOne * numberTwo);

@@ -3,7 +3,6 @@ import readlineSync from 'readline-sync';
 // additional functions
 const numberOfQuestions = 3;
 const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
-const isEven = number => number % 2 === 0;
 
 // dialog
 const sayHello = () => {
@@ -15,7 +14,7 @@ const sayHello = () => {
 // main game function
 const gameSample = (rule, game) => {
   console.log('Welcome to the Brain Games!');
-  console.log(rule);
+  console.log(`${rule}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!\n`);
   for (let i = 0; i < numberOfQuestions; i += 1) {
@@ -34,5 +33,5 @@ const gameSample = (rule, game) => {
 };
 
 export {
-  sayHello, randomNumber, isEven, numberOfQuestions, gameSample,
+  sayHello, randomNumber, gameSample,
 };
