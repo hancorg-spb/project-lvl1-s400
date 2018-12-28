@@ -1,27 +1,28 @@
 import gameSample from '..';
 import randomNumber from '../utils';
 
-const numberOfDigits = 10;
+const length = 10;
+const maxFirstNumber = 100;
+const maxDifference = 10;
 
 const rule = 'What number is missing in the progression?';
 
 const progression = () => {
-  const maxFirstNumber = 100;
   const firstNumber = randomNumber(1, maxFirstNumber);
-  const maxProgressionNumber = 10;
-  const progressionNumber = randomNumber(1, maxProgressionNumber);
-  const hideNumber = randomNumber(1, numberOfDigits);
+  const difference = randomNumber(1, maxDifference);
+  const hiddenNumberPosition = randomNumber(1, length);
   let currentNumber = firstNumber;
   let trueAnswer;
   let question = '';
-  for (let i = 1; i < numberOfDigits; i += 1) {
-    if (i === hideNumber) {
+  for (let i = 1; i < length; i += 1) {
+    if (i === hiddenNumberPosition) {
       trueAnswer = String(currentNumber);
-      currentNumber += progressionNumber;
+      currentNumber = firstNumber + difference * i;
+      i += 1;
       question += '.. ';
     }
     question += `${currentNumber} `;
-    currentNumber += progressionNumber;
+    currentNumber = firstNumber + difference * i;
   }
   return [question, trueAnswer];
 };
