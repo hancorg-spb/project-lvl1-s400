@@ -3,19 +3,7 @@ import randomNumber from '../utils';
 
 const randomOperation = () => {
   const operationIndex = randomNumber(1, 4);
-  const [plus, minus, multiply] = ['+', '-', '*'];
-  let stringOperation;
-  switch (operationIndex) {
-    case 1:
-      stringOperation = plus;
-      break;
-    case 2:
-      stringOperation = minus;
-      break;
-    default:
-      stringOperation = multiply;
-      break;
-  }
+  const stringOperation = ['+', '-', '*'][operationIndex];
   return stringOperation;
 };
 
