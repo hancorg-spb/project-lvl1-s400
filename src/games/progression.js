@@ -12,17 +12,16 @@ const progression = () => {
   const difference = randomNumber(1, maxDifference);
   const hiddenNumberPosition = randomNumber(1, length);
   let currentNumber = firstNumber;
-  let trueAnswer;
+  const trueAnswer = String(firstNumber + difference * hiddenNumberPosition);
   let question = '';
-  for (let i = 1; i < length; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     if (i === hiddenNumberPosition) {
-      trueAnswer = String(currentNumber);
       currentNumber = firstNumber + difference * i;
       i += 1;
       question += '.. ';
     }
-    question += `${currentNumber} `;
     currentNumber = firstNumber + difference * i;
+    question += `${currentNumber} `;
   }
   return [question, trueAnswer];
 };
