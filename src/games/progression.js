@@ -20,7 +20,7 @@ const progression = () => {
       question = `${question} ${firstNumber + difference * i}`;
     }
   }
-  return [question.substr(1), trueAnswer];
+  return [question.slice(1), trueAnswer];
 };
 
 export default () => gameSample(rule, progression);
