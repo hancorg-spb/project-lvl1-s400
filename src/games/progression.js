@@ -11,19 +11,16 @@ const progression = () => {
   const firstNumber = randomNumber(1, maxFirstNumber);
   const difference = randomNumber(1, maxDifference);
   const hiddenNumberPosition = randomNumber(1, length);
-  let currentNumber = firstNumber;
   const trueAnswer = String(firstNumber + difference * hiddenNumberPosition);
   let question = '';
   for (let i = 0; i < length; i += 1) {
     if (i === hiddenNumberPosition) {
-      currentNumber = firstNumber + difference * i;
-      i += 1;
-      question += '.. ';
+      question = `${question} ..`;
+    } else {
+      question = `${question} ${firstNumber + difference * i}`;
     }
-    currentNumber = firstNumber + difference * i;
-    question += `${currentNumber} `;
   }
-  return [question, trueAnswer];
+  return [question.substr(1), trueAnswer];
 };
 
 export default () => gameSample(rule, progression);
